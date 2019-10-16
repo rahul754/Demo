@@ -18,10 +18,15 @@ namespace Demo.Controllers
         // GET api/values/5
         public string Get(int id)
         {
-            if(id > 5)
+            if(id > 0 && id < 5)
             {
-                return "Large value";
+              return "Small Value"
             }
+            else if(id > 5 && id < 10)
+            {
+                return "Medium value";
+            }
+            
             return "value1290";
         }
 
